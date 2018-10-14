@@ -4,7 +4,7 @@
 A flash card studying android app.
 
 ### App Walk-though
-<img src="https://media.giphy.com/media/9ryyIK2DmZyCers1Zs/giphy.gif" width=200><br>
+<img src="https://media.giphy.com/media/2tRpm6otcQNrEpmapi/giphy.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
