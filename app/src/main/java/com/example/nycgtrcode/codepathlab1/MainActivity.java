@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
                     choicePicked = true;
                 if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
                     ans1.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_incorrect) );
-                    ans2.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
+                    ans3.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
                 } else {
                     ans1.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_incorrect));
-                    ans2.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
+                    ans3.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
                 }
             }
         });
@@ -51,10 +51,17 @@ public class MainActivity extends AppCompatActivity {
                     resetChoiceBackground();
                 else
                     choicePicked = true;
-                if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN)
-                    ans2.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
+                if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+                    ans2.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_incorrect));
+                    ans3.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
+                }
+
+
                 else
-                    ans2.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
+                {
+                    ans2.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_incorrect));
+                    ans3.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
+                }
 
             }
         });
@@ -67,12 +74,10 @@ public class MainActivity extends AppCompatActivity {
                 else
                     choicePicked = true;
                 if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN){
-                    ans2.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
-                    ans3.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_incorrect));
+                    ans3.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
                 }
                 else {
-                    ans2.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
-                    ans3.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_incorrect));
+                    ans3.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ans_correct));
                 }
             }
         });
